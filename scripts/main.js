@@ -1,4 +1,4 @@
-const apiKey = 'd29245ff55eaa3256cf2ed3147d3a0f6'; 
+const apiKey = 'd29245ff55eaa3256cf2ed3147d3a0f6';
 
 async function getWeather() {
   const city = document.getElementById('cityInput').value.trim();
@@ -10,7 +10,7 @@ async function getWeather() {
     );
 
     if (!response.ok) {
-      alert("City not found!");
+      alert("City not found!!");
       return;
     }
 
