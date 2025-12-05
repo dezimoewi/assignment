@@ -1,14 +1,14 @@
 * {
   margin: 0;
-  padding: o;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center;   /* centers horizontally */
+  align-items: center;        /* centers vertically */
   height: 100vh;
   background: linear-gradient(to top, #1863a8, #889df85e);
 }
@@ -17,6 +17,9 @@ body {
   text-align: center;
   padding: 20px;
   background: linear-gradient(to bottom, #74ebd5, #acb6e5);
+  width: 50%;
+  margin: auto;
+  border-radius: 12px;
 }
 
 h1 {
@@ -55,12 +58,8 @@ h2 {
   margin: 10px 0;
 }
 
-@media (min-width: 320px) {
+@media (max-width: 600px) {
   .container {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
     width: 90%;
-    align-items: center;
   }
 }
